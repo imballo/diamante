@@ -1,4 +1,4 @@
-<h3>Avventure testuali sviluppate insieme alla classe xxxxx</h3>
+<h3>Avventure testuali sviluppate insieme alla classe 5° della Scuola Primaria Val Di Cava – Istituto Comprensivo "Niccolini" – Ponsacco (PI).</h3>
 
 <h3>Prerequisiti:</h3>
 E richiesto che sia installato un interprete Python 3.<br>
