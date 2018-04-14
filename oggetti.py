@@ -24,10 +24,10 @@ class Chiave(Oggetto):
 class Fune(Oggetto):
     def __init__(self):
         super().__init__('Fune','Una lunga fune da arrampicata',70)
-        
+
 class Dinamite(Oggetto):
     def __init__(self):
-        super().__init__('Dinamite','Una potente carica di dinamite',70)        
+        super().__init__('Dinamite','Una potente dinamite',70)
 
 class Roccia(Arma):
     def __init__(self):
@@ -53,9 +53,23 @@ class PozioneCurativa(Mangiabile):
     def __init__(self):
         super().__init__("Pozione curativa","Una pozione guarente",50,20)
 
-class SpadaLaser(Arma):
+
+class Succocactus(Mangiabile):
     def __init__(self):
-        super().__init__("Spada Laser","Una spada laser da vero jedi",20,50)
+        super().__init__("Succo di cactus","cactus spremuto",55,30)
+        
+class Mazzachiodata(Arma):
+    def __init__(self):
+        super().__init__("Mazza chiodata","mazza rivestita di chiodi",20,50)
+    
+class Lancia(Arma):
+    def __init__(self):
+        super().__init__("Lancia","Una lancia di ferro ",15,35)
+
+class Spadamagica(Arma):
+    def __init__(self):
+        super().__init__("Spada Magica","Una spada ultrapotente ",30,55)
+
 
 # --------------------------
 # test

@@ -18,17 +18,17 @@ u, U, usa: usa oggetto
 z, Z, ascolta: ascolta
 q, Q, uscire: termina l'avventura"""
 print("""
-Matteo è lieto di presentarvi questa avventura.
+Benvenuto, il gruppo Acabot è lieto di presentarti questa avventura.
 """)
 print("""Che mappa vuoi affrontare:
-1) caccia al diamante
-2) fuga dalla caverna
+1) un mappa bella 
+2) una bella mappa
 """)
 risposta=int(input("Inserisci un numero:"))
 if risposta==1:
-    nome_mappa='./mappe/m.csv'
+    nome_mappa='./mappe/a-af.csv'
 elif risposta==2:
-    nome_mappa='./mappe/m-r.csv'
+    nome_mappa='./mappe/c-aa.csv'
 mappa = Mappa(nome_mappa)    
 risposta=input('\nDifficoltà ridotta (mappa visibile, nemici meno potenti, vita/oro aumentati) (s/n)?')
 if risposta=='s' or risposta=='S':
@@ -90,7 +90,7 @@ while True:                                    #“game loop”
     if not stanza.visitata:
         stanza.visitata = True
 print("""
-Matteo ti ringrazia per avere giocato a questa avventura.
+Il gruppo Acabot ti ringrazia per avere giocato a questa avventura.
 """)        
 input('Premi un tasto per continuare.')
 print(open('./immagini_storie/crediti.txt').read(),veloce=True)

@@ -5,9 +5,13 @@ from random import random
 class Giocatore:
     def __init__(self, mappa):
         self.inventario = [Roccia(),
-            Spada(),
-            Pane(),
-            Mela()]
+                           Spadamagica(),
+                           Lancia(),
+                           Mazzachiodata(),
+                           Succocactus(),                                                      
+                           Spada(),
+                           Pane(),
+                           Mela()]
         self.arma = self.arma_potente()
         self.vita = 100
         self.oro=50
@@ -18,8 +22,8 @@ class Giocatore:
             
     def gioco_facile(self):
         self.facile=True
-        self.inventario.append(Spada())
-        self.inventario.append(PozioneCurativa())
+        self.inventario.append(Spadamagica())
+        self.inventario.append(Succocactus())
         self.vita=int(self.vita*2)
         self.oro=int(self.oro*2)
         
@@ -133,7 +137,7 @@ class Giocatore:
                 if isinstance(oggetto_scelto,Chiave) or isinstance(oggetto_scelto,Fune) or isinstance(oggetto_scelto,Dinamite):
                     direzioni=[[-1,0],[1,0],[0,-1],[0,1]]
                     for direzione in direzioni:
-                        stanza=self.mappa.casella_a(self.x+direzione[0], self.y++direzione[1])
+                        stanza=self.mappa.casella_a(self.x+direzione[0], self.y+direzione[1])
                         if isinstance(stanza,CasellaPorta) and not stanza.porta_aperta and stanza.tipo=='Porta' and isinstance(oggetto_scelto,Chiave):                            
                             oggetti.remove(oggetto_scelto)
                             stanza.porta_aperta=True

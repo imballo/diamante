@@ -11,7 +11,7 @@ class Personaggio:
 
 class Cantastorie(Personaggio):
     def __init__(self):
-        super().__init__('Lucio il cantastorie')
+        super().__init__('Universo il cantastorie')
     
     def racconta_storia(self,dado=0):
         if dado==0:
@@ -27,9 +27,9 @@ class Cantastorie(Personaggio):
 class Commerciante(Personaggio):
     def __init__(self):
         self.oro = 100
-        self.inventario = [Mela(),Mela(),Pane(),
+        self.inventario = [Succocactus(),Mela(),Pane(),
                            Pane(),Pane(),PozioneCurativa(),
-                           PozioneCurativa(),Roccia(),Pugnale(),Spada()]
+                           PozioneCurativa(),Roccia(),Pugnale(),Spada(),Mazzachiodata(),Lancia(),Spadamagica()]
         super().__init__('Commerciante')
 
 
@@ -53,34 +53,35 @@ class Nemico(Personaggio):
 
 class NemicoFacile(Nemico):
     def __init__(self):
-        self.descrizione_vivo = '\nUn ragno gigante ti sbarra la strada\n'
-        self.descrizione_morto = '\nOsservi i resti del ragno ucciso\n'
-        super().__init__('Ragno Gigante', 10, 2)
-         
+        self.descrizione_vivo = '\nUn Paguro Gigante ti sbarra la strada.\n'
+        self.descrizione_morto = '\nOsservi i resti del Paguro ucciso.\n'
+        super().__init__('Paguro Gigante', 10, 2)        
 
 class NemicoMedio(Nemico):
     def __init__(self):
-        self.descrizione_vivo = '\nUn orco ti sbarra la strada\n'
-        self.descrizione_morto = "\nOsservi i resti dell'orco ucciso\n"        
-        super().__init__('Orco', 30, 10)
+        self.descrizione_vivo = '\nUn Granchio troppo cresciuto ti sbarra la strada.\n'
+        self.descrizione_morto = "\nOsservi i resti del Granchio ucciso.\n"        
+        super().__init__('Granchio troppo cresciuto ', 30, 10)
 
 class NemicoNumeroso(Nemico):
     def __init__(self):
-        self.descrizione_vivo = '\nDei pipistrelli ti sbarrano la strada\n'
-        self.descrizione_morto = '\nOsservi i resti dei pipistrelli uccisi\n'        
-        super().__init__('Sciame di pipistrelli',100,4)
+        self.descrizione_vivo = '\nDelle enormi formiche ti sbarrano la strada.\n'
+        self.descrizione_morto = '\nOsservi i resti delle formiche uccise.\n'        
+        super().__init__('Gruppo di formiche ',100,4)
 
 class NemicoForte(Nemico):
     def __init__(self):
-        self.descrizione_vivo = '\nUn gigante roccioso ti sbarra la strada\n'
-        self.descrizione_morto = '\nOsservi i resti del gigante ucciso\n'        
-        super().__init__('Gigante roccioso',80,15)
+        self.descrizione_vivo = '\nUn Gigante di sabbia ti sbarra la strada.\n'
+        self.descrizione_morto = '\nOsservi i resti del Gigante ucciso.\n'        
+        super().__init__('Gigante di sabbia',80,15)
 
 class NemicoBoss(Nemico):
     def __init__(self):
-        self.descrizione_vivo = '\nUn super mostro vuole fermarti\n'
-        self.descrizione_morto = '\nOsservi i resti del nemico ucciso\n'        
-        super().__init__('Boss',120,15)
+        self.descrizione_vivo = '\nSurvive vuole fermarti.\n'
+        self.descrizione_morto = '\nOsservi i resti di Survive ucciso.\n'        
+        super().__init__('Survive',120,15)
+        
+                    
         
         
 # --------------------------
