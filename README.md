@@ -1,7 +1,8 @@
-<h3>Avventure testuali sviluppate insieme alla classe 5° della Scuola Primaria Val Di Cava – Istituto Comprensivo "Niccolini" – Ponsacco (PI).</h3>
-<b>Diamante perduto by Matteo</b><br>
-<b>La muraglia cinese by The ThreeGirls</b><br>
-<h3>Prerequisiti:</h3>
+<h3>Avventure testuali sviluppate insieme alla classe 5° della Scuola Primaria Val Di Cava – Istituto Comprensivo "Niccolini" – Ponsacco (PI).</h3><b>
+Diamante perduto by Matteo<br>
+La muraglia cinese by The ThreeGirls<br>
+Undersand by Acabot
+</b><h3>Prerequisiti:</h3>
 E richiesto che sia installato un interprete Python 3.<br>
 Per la versione a finestre/bottoni è necessario anche la presenza del framework Kivy.<br>
 <br>
