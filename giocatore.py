@@ -4,12 +4,10 @@ from random import random
 
 class Giocatore:
     def __init__(self, mappa):
-        self.inventario = [TeAlGelsomino(),
-            RisottoAllaCantonese(),
-            InvoltiniPrimavera(),
-            Katana(),
-            StellineNinja(),
-            Bàng()]
+        self.inventario = [Roccia(),
+            Spada(),
+            Pane(),
+            Mela()]
         self.arma = self.arma_potente()
         self.vita = 100
         self.oro=50
@@ -20,8 +18,8 @@ class Giocatore:
             
     def gioco_facile(self):
         self.facile=True
-        self.inventario.append(Katana())
-        self.inventario.append(InvoltiniPrimavera())
+        self.inventario.append(Spada())
+        self.inventario.append(PozioneCurativa())
         self.vita=int(self.vita*2)
         self.oro=int(self.oro*2)
         
