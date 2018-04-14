@@ -18,17 +18,20 @@ u, U, usa: usa oggetto
 z, Z, ascolta: ascolta
 q, Q, uscire: termina l'avventura"""
 print("""
-Benvenuto! Il gruppo dei Creatori presenta un gioco interessante.
+Le Three-Girls sono liete di presentare questa avventura.
 """)
 print("""Che mappa vuoi affrontare:
-1) bloodbath
-2) la mappa bella
+1) La città proibita di Pekino
+2) Wutay il monte abbandonato
+3) La muraglia cinese
 """)
 risposta=int(input("Inserisci un numero:"))
 if risposta==1:
-    nome_mappa='./mappe/l-a-d.csv'
+    nome_mappa='./mappe/a-c.csv'
 elif risposta==2:
-    nome_mappa='./mappe/d.csv'
+    nome_mappa='./mappe/a.csv'
+elif risposta==3:
+    nome_mappa='./mappe/a-a-c.csv'
 mappa = Mappa(nome_mappa)    
 risposta=input('\nDifficoltà ridotta (mappa visibile, nemici meno potenti, vita/oro aumentati) (s/n)?')
 if risposta=='s' or risposta=='S':
@@ -90,7 +93,7 @@ while True:                                    #“game loop”
     if not stanza.visitata:
         stanza.visitata = True
 print("""
-Il gruppo dei Creatori ti ringrazia per avere giocato e ti da appuntamento alla prossima avventura.
-""")       
+Le Three-Girls ti ringraziano per aver giocato e ti danno appuntamento alla prossima avventura.
+""")        
 input('Premi un tasto per continuare.')
 print(open('./immagini_storie/crediti.txt').read(),veloce=True)

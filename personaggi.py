@@ -11,7 +11,7 @@ class Personaggio:
 
 class Cantastorie(Personaggio):
     def __init__(self):
-        super().__init__('Gino il cantastorie')
+        super().__init__('Jeremias  il cantastorie')
     
     def racconta_storia(self,dado=0):
         if dado==0:
@@ -27,8 +27,9 @@ class Cantastorie(Personaggio):
 class Commerciante(Personaggio):
     def __init__(self):
         self.oro = 100
-        self.inventario = [Mela(),Mela(),Pane(),PozioneCurativa(),BarrettaEnergetica(),
-                           PozioneCurativa(),Roccia(),Pugnale(),Spada(),Arco()]
+        self.inventario = [Dinamite(),Bàng(),StellineNinja(),
+                           Katana(),InvoltiniPrimavera(),RisottoAllaCantonese()]
+                           #TeAlGelsomino]
         super().__init__('Commerciante')
 
 
@@ -52,33 +53,33 @@ class Nemico(Personaggio):
 
 class NemicoFacile(Nemico):
     def __init__(self):
-        self.descrizione_vivo = '\nUna Tartaruga gigante non ti fa passare.\n'
-        self.descrizione_morto = '\nOsservi la Tartaruga defunta.\n'
-        super().__init__('Tartaruga gigante', 10, 2)        
+        self.descrizione_vivo = '\nUna Tigre siberiana ti blocca la strada.\n'
+        self.descrizione_morto = '\nOsservi il cadavere della Tigre da te uccisa.\n'
+        super().__init__('Tigre siberiana', 10, 2)        
 
 class NemicoMedio(Nemico):
     def __init__(self):
-        self.descrizione_vivo = '\nUn Lombrico gigante non ti fa passare.\n'
-        self.descrizione_morto = "\nOsservi il Lombrico morto.\n"        
-        super().__init__('Lombrico gigante', 30, 10)
+        self.descrizione_vivo = '\nUn Ninja ti blocca il passaggio.\n'
+        self.descrizione_morto = "\nOsservi il Ninja insanguinato da te assassinato.\n"        
+        super().__init__('Ninja', 30, 10)
 
 class NemicoNumeroso(Nemico):
     def __init__(self):
-        self.descrizione_vivo = '\nDei piccoli Goblin non ti fanno passare.\n'
-        self.descrizione_morto = '\nOsservi i Goblin uccisi.\n'        
-        super().__init__('Piccoli goblin',100,4)
+        self.descrizione_vivo = '\nUn Esercito di terracotta ti impedisce di continuare la tua avventura.\n'
+        self.descrizione_morto = '\nGuardi orgoglioso i resti degli omini di terracotta da te fatti a pezzi.\n'        
+        super().__init__('Esercito di terracotta',100,4)
 
 class NemicoForte(Nemico):
     def __init__(self):
-        self.descrizione_vivo = '\nUn Golem non ti fa passare.\n'
-        self.descrizione_morto = '\nOsservi i resti del Golem ucciso.\n'        
-        super().__init__('Golem',80,15)
+        self.descrizione_vivo = '\nUn Imperatore infernale ti impedisce di proseguire il tuo percorso.\n'
+        self.descrizione_morto = '\nOsservi incantato i resti del tuo nemico.\n'        
+        super().__init__('Imperatore infernale ',80,15)
 
 class NemicoBoss(Nemico):
     def __init__(self):
-        self.descrizione_vivo = '\nUn Pipistrello gigante non ti fa passare.\n'
-        self.descrizione_morto = '\nOsservi il Pipistrello gigante defunto.\n'        
-        super().__init__('Pipistrello gigante',120,15)
+        self.descrizione_vivo = '\nUn Dragone fiammeggiante ti impedisce di raggiungere la tua destinazione.\n'
+        self.descrizione_morto = '\nOsservi contento il Dragone disteso a terra da te ucciso.\n'        
+        super().__init__('Dragone fiammeggiante(boss)',120,15)
         
         
 # --------------------------

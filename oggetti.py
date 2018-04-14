@@ -29,44 +29,30 @@ class Dinamite(Oggetto):
     def __init__(self):
         super().__init__('Dinamite','Una potente carica di dinamite',70)        
 
-class Roccia(Arma):
+class Bàng(Arma):
     def __init__(self):
-        super().__init__("Roccia","Una semplice roccia",5,1)
+        super().__init__("Bàng","Una Bàng(una lancia Cinese) pronta a essere lanciata",10,5)
 
-class Pugnale(Arma):
+class StellineNinja(Arma):
     def __init__(self):
-        super().__init__("Pugnale","Una piccolo pugnale",10,10)
+        super().__init__("Stelline ninja","Delle stelline ninja piccole ma potenti",20,11)
 
-class Spada(Arma):
+class Katana(Arma):
     def __init__(self):
-        super().__init__("Spada","Una spada ad una mano",20,50)
+        super().__init__("Katana","Una katana affilata",50,110)
                 
-class Pane(Mangiabile):
+class InvoltiniPrimavera(Mangiabile):
     def __init__(self):
-        super().__init__("Pane","Una pagnotta di pane",10,5)
+        super().__init__("Involtini Primavera","Dei gustosi e raffinati Involtini",17,9)
         
-class Mela(Mangiabile):
+class RisottoAllaCantonese(Mangiabile):
     def __init__(self):
-        super().__init__("Mela","Una mela rossa",5,5)
+        super().__init__("Risotto alla cantonese","Un risotto caldo pronto a essere mangiato",23,31)
 
-class PozioneCurativa(Mangiabile):
+class TeAlGelsomino(Mangiabile):
     def __init__(self):
-        super().__init__("Pozione curativa","Una pozione guarente",50,20)
+        super().__init__("Te' al gelsomino","Un caldo tè al gelsomino molto energetico",50,20)
         
-class Arco(Arma):
-    def __init__(self):
-        super().__init__("Arco","l'arco è in grado di fare danno a distanza",15,50)
-                         
-class PozioneAdArea(Arma):
-    def __init__(self):
-        super().__init__('Pozione ad area','la pozione ad area è in grado di fare danno a tanti piccoli mostri',3,10)
-
-class BarrettaEnergetica(Mangiabile):
-    def __init__(self):
-        super().__init__("Barretta Energetica","Barretta Al Cioccolato ",50,20)
- 
-                         
-
 
 # --------------------------
 # test
