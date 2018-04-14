@@ -12,12 +12,12 @@ class CasellaInizio(CasellaMappa):
     
     def descrizione(self):
         if self.visitata:
-            return "\nQuesta è una zona noiosa della caverna.\n"
+            return "\nQuesta è una casella vuota del labirinto.\n"
         else:
             s=open('./immagini_storie/immagine_inizio.txt').read()
             s=s+"""
-Ti trovi in una caverna alla ricerca di una pietra leggendaria.
-Trovarla o meno sarà solo merito tuo.
+Ti trovi in un labirinto in fondo al mare alla ricerca di un tesoro leggendario.
+Sarà difficile trovarlo, ma se ti impegnerai, potrai riuscirci.
 """
             return s
         
@@ -27,14 +27,14 @@ class CasellaNoiosa(CasellaMappa):
     
     def descrizione(self):
         if self.visitata:
-            d1="\nSei già passato da questa zona noiosa.\n"
-            d2="\nSei già stato qui...non ti sarai mica perso.\n"
+            d1="\nSei già passato da qui.\n"
+            d2="\nSei già stato qui...non è che per caso ti sei perso?\n"
         else:
-            d1="\nQuesta è una zona noiosa della caverna.\n"
-            d2="\nQuesta zona non cotiene niente di importante.\n"
+            d1="\nQuesta è una zona noiosa del labirinto.\n"
+            d2="\nQuesta zona non contiene niente di importante.\n"
         return choice([d1,d2])
     
-class CasellaFine(CasellaMappa):
+class CasellaFine(CasellaMappa):        
     def __str__(self):
         return 'FF'
     
@@ -42,8 +42,9 @@ class CasellaFine(CasellaMappa):
         d=open('./immagini_storie/immagine_fine.txt').read()        
         d1= \
 """
-Vedi il luccichio di una pietra in lontananza.
-Hai appena riscoperto il leggendario diamante perduto.
+Vedi la fine del labirinto.
+Hai appena scoperto  il grande tesoro contenente il famoso
+tridente di Tritone.
 Adesso sai che i tuoi sforzi hanno avuto succeso.
 """
         d2=d1
@@ -56,7 +57,8 @@ class CasellaBuca(CasellaFine):
     
     def descrizione(self):
         d1 = """
-Rovini in una buca dalla quale non uscirai più.
+Cadi in una buca di sabbia.
+Sei morto e la tua avventura finisce qui!
 """
         d2 = """
 Un pesante macigno ti cade addosso...la tua avventura finisce qui.
@@ -69,8 +71,8 @@ class CasellaVuota(CasellaMappa):
     
     def descrizione(self):
         d1 = "\nDi qui non puoi passare\n"
-        d2 = "\nUn dirupo insuperabile ti blocca il passaggio\n"
-        d3 = "\nUn muro indistruttibile ti impedisce di continuare\n"
+        d2 = "\nUn maremoto insuperabile ti blocca la strada"       
+        d3 = "\nUn branco di pesci ti impedisce di continuare\n"
         return choice([d1,d2,d3])
     
 class CasellaCantastorie(CasellaMappa):
@@ -84,9 +86,9 @@ class CasellaCantastorie(CasellaMappa):
     
     def descrizione(self):        
         if self.visitata:
-            return '\nVuoi ascoltare ancora la mia storia.\n'
+            return '\nVuoi ascoltare ancora la mia storia?\n'
         else:
-            return '\nVuoi ascoltare la mia storia.\n'
+            return '\nVuoi ascoltare la mia storia?\n'
 
 class CasellaOro(CasellaMappa):
     def __init__(self,oro=30):
@@ -98,10 +100,9 @@ class CasellaOro(CasellaMappa):
     
     def descrizione(self):
         if self.oro>0:
-            return "\nVedi alcune monete d'oro in un angolo. Le raccogli contento.\n"
+            return "\nVedi alcuni dobloni d'oro in un angolo. Li raccogli felice.\n"
         else:
             return "\nRicordi contento quando hai raccolto le monete d'oro.\n"
-
 class CasellaOggetto(CasellaMappa):
     def __init__(self,oggetto='Chiave'):
         self.raccolto = False        
@@ -122,7 +123,7 @@ class CasellaOggetto(CasellaMappa):
 
     def descrizione(self):
         if self.raccolto:
-            return "\nCerchi bene ma non riesce a trovare un altro oggetto.\n"
+            return "\nCerchi bene ma non riesi a trovare un altro oggetto.\n"
         else:
             return "\nNell'angolo vedi una {} che raccogli senza esitare.\n".format(self.oggetti[0])                
 
@@ -150,7 +151,7 @@ class CasellaPorta(CasellaMappa):
             elif self.tipo=='Crepaccio':
                 return "\nLa fune ti permette ora di attraversare il crepaccio.\n"
             elif self.tipo=='Roccia':
-                return "\nOsservi le roccie che ti bloccavano il passaggio.\n"
+                return "\nOsservi le rocce che ti bloccavano il passaggio.\n"
         else:
             if self.tipo=='Porta':
                 return "\nTi trovi di fronte ad una porta chiusa che non ti permette di proseguire.\n"
@@ -209,9 +210,9 @@ class CasellaCommerciante(CasellaMappa):
     
     def descrizione(self):
         if self.visitata:
-            return '\nBen tornato al mio emporio.\n'
+            return '\nBen tornato da me.\n'
         else:
-            return '\nBenvenuto al mio emporio.\n'
+            return '\nBenvenuto nel mio negozio.\n'
     
     def vuoi_commerciare(self, giocatore):
         trovato = False
@@ -233,7 +234,7 @@ Scelta: """);
     
     def commercia(self, compratore, venditore):
         if venditore.inventario == []:
-            print("\nIl venditore non ha niente da vendere\n")
+            print("\nIl venditore  ha qualcosa da vendere\n")
             return
         i = 1
         print("\nOggetti in vendita:")
@@ -243,7 +244,7 @@ Scelta: """);
         print("\nOro compratore:{}".format(compratore.oro)) 
         trovato = False
         while not trovato:
-            scelta = input("Inserisci il numero (0 per uscire): ")
+            scelta = input("inserisci il numero (0 per uscire): ")
             if scelta.isnumeric() and int(scelta)<=len(venditore.inventario) \
                and int(scelta)>=0:
                 if int(scelta)==0:

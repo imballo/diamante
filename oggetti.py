@@ -52,11 +52,23 @@ class Mela(Mangiabile):
 class PozioneCurativa(Mangiabile):
     def __init__(self):
         super().__init__("Pozione curativa","Una pozione guarente",50,20)
-
-class SpadaLaser(Arma):
+        
+class Spadacorallo(Arma):
     def __init__(self):
-        super().__init__("Spada Laser","Una spada laser da vero jedi",20,50)
+        super().__init__("Spada corallo","Una spada ad una mano fatta di corallo",30,70)
 
+class Balestramarina(Arma):
+    def __init__(self):
+        super().__init__("Balestra marina","Una balestra fatta di corallo",40,100)
+                        
+class Ricciodimare(Mangiabile):
+    def __init__(self):
+        super().__init__("Riccio di mare","Un riccio senza spine",30,40)
+
+class Acquasalata(Mangiabile):
+    def __init__(self):
+        super().__init__("Acqua salata","Acqua buona",20,40)
+        
 # --------------------------
 # test
 # --------------------------
