@@ -140,8 +140,8 @@ CasellaCommerciante.vuoi_commerciare = vuoi_commerciare
 CasellaCommerciante.commercia = commercia
 
 lista_azioni = ['nord','sud','est','ovest','inventario','mangia','attacca','commercia','mappa','usa','ascolta','aiuto-crediti-esci']
-nomi_mappe = {'caccia al diamante':'./mappe/matteo.csv',
-              'fuga dalla caverna':'./mappe/matteo-ritorno.csv'}
+nomi_mappe = {'caccia al diamante':'./mappe/m.csv',
+              'fuga dalla caverna':'./mappe/m-r.csv'}
 
 help = """
 Le possibili azioni sono:
