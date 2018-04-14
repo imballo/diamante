@@ -13,7 +13,7 @@ E richiesto che sia installato un interprete Python 3.<br>
 Per la versione a finestre/bottoni è necessario anche la presenza del framework Kivy.<br>
 <br>
 <h3>Uso:</h3>
-Scaricare il ramo ('branch') a cui si vuole giocare sul proprio computer.
+Scaricare il ramo ('branch') a cui si vuole giocare sul proprio computer.<br>
 Per la versione a riga di comando:<br>
 python3 gioco.py<br>
 Per la versione a finestre/bottoni: <br>
