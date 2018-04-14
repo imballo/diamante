@@ -26,9 +26,9 @@ print("""Che mappa vuoi affrontare:
 """)
 risposta=int(input("Inserisci un numero:"))
 if risposta==1:
-    nome_mappa='./mappe/matteo.csv'
+    nome_mappa='./mappe/m.csv'
 elif risposta==2:
-    nome_mappa='./mappe/matteo-ritorno.csv'
+    nome_mappa='./mappe/m-r.csv'
 mappa = Mappa(nome_mappa)    
 risposta=input('\nDifficoltà ridotta (mappa visibile, nemici meno potenti, vita/oro aumentati) (s/n)?')
 if risposta=='s' or risposta=='S':
