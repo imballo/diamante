@@ -140,8 +140,9 @@ CasellaCommerciante.vuoi_commerciare = vuoi_commerciare
 CasellaCommerciante.commercia = commercia
 
 lista_azioni = ['nord','sud','est','ovest','inventario','mangia','attacca','commercia','mappa','usa','ascolta','aiuto-crediti-esci']
-nomi_mappe = {'caccia al diamante':'./mappe/m.csv',
-              'fuga dalla caverna':'./mappe/m-r.csv'}
+nomi_mappe = {'la montagna zeta':'./mappe/apu-d-t.csv',
+              'la montagna beta':'./mappe/apu.csv'}
+
 
 help = """
 Le possibili azioni sono:
@@ -167,7 +168,7 @@ def carica_gioco(nome_mappa=''):
 
 class Schermo(BoxLayout):
     def chiudi(self,dt):
-        print("\nMatteo vi ringrazia per avere giocato alla sua avventura")        
+        print("\nI tre fantasy vi ringraziano per aver giocato.")        
         #App.get_running_app().on_pause()
         App.get_running_app().stop()
         Window.close()
@@ -261,7 +262,7 @@ class Schermo(BoxLayout):
             if azione=='facile':                
                 mappa.gioco_facile()
                 giocatore.gioco_facile()
-            print("\nMatteo è lieto di presentarvi:")
+            print("\nI tre fantasy sono lieti di presentarvi la caccia al diamante zeta.")
             print("\nDigita h/H help per ricevere aiuto sui comandi!\n")
             print(stanza.descrizione(),end='')
             self.crea_bottoni(lista_azioni)

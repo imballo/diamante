@@ -52,10 +52,34 @@ class Mela(Mangiabile):
 class PozioneCurativa(Mangiabile):
     def __init__(self):
         super().__init__("Pozione curativa","Una pozione guarente",50,20)
-
-class SpadaLaser(Arma):
+        
+class PugnaleDiRambo(Arma):
     def __init__(self):
-        super().__init__("Spada Laser","Una spada laser da vero jedi",20,50)
+     super().__init__("Pugnale di rambo","Il pugnale UsatovDa Rambo",10,10)
+     
+class SpadaSolare(Arma):
+    def __init__(self):
+        super().__init__("Spada solare","Una spada con l'energia del sole",20,50)
+       
+class BombaFumogena(Arma):
+    def __init__(self):
+        super().__init__("Bomba fumogena","bomba che quando esplode rilascia fumo",5,1)
+       
+class MelaDiArgento(Mangiabile):
+    def __init__(self):
+        super().__init__("Mela Di argento","Una mela rossa",5,5)
+ 
+class PaninoAlSalame(Mangiabile):
+    def __init__(self):
+        super().__init__("Panino al salame","un panino con dentro cinque fette di salame",10,5)
+
+class DinamiteSilenziata(Arma):
+    def __init__(self):
+        super().__init__('Dinamite silenziata','una speciale dinamite che quando esplode non fa rumore',25,20)        
+
+class PozioneCurativa(Mangiabile):
+    def __init__(self):
+        super().__init__("Pozione curativa","Una pozione guarente",50,20)
 
 # --------------------------
 # test
