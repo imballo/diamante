@@ -41,22 +41,31 @@ class Spada(Arma):
     def __init__(self):
         super().__init__("Spada","Una spada ad una mano",20,50)
                 
-class Pane(Mangiabile):
+class Affumicatore(Arma):
     def __init__(self):
-        super().__init__("Pane","Una pagnotta di pane",10,5)
-        
-class Mela(Mangiabile):
-    def __init__(self):
-        super().__init__("Mela","Una mela rossa",5,5)
+        super().__init__("Affumicatore","Un affumicatore si accende ed emette fumo",20,50)
+                
 
 class PozioneCurativa(Mangiabile):
     def __init__(self):
-        super().__init__("Pozione curativa","Una pozione guarente",50,20)
+        super().__init__("Pozione curativa","Una pozione guarente",50,20)       
 
-class SpadaLaser(Arma):
+class Arco(Arma):
     def __init__(self):
-        super().__init__("Spada Laser","Una spada laser da vero jedi",20,50)
+        super().__init__("Arco","Un arco ad una mano",20,50)                
 
+class Frecce(Arma):
+    def __init__(self):
+        super().__init__('Frecce','Una potente carica di frecce',5,5)        
+
+class Strudel(Mangiabile):
+    def __init__(self):
+        super().__init__("Strudel","Un bello struderl di mele",5,5)
+        
+class Marionberrypie(Mangiabile):
+    def __init__(self):
+        super().__init__("Marionbeerry pie","Una bella porzione di marionberry pie",10,5)
+            
 # --------------------------
 # test
 # --------------------------
