@@ -11,7 +11,7 @@ Per la versione a riga di comando:<br>
 python3 gioco.py<br>
 Per la versione a finestre/bottoni: <br>
 python3 wgioco.py<br>
-E' possibile scaricare una versione compilata per Android al seguente link:<br>
+E' possibile scaricare una versione compilata per Android usando il framework Buildozer/Python-for-android al seguente link:<br>
 ...<br>
 <br>
 <h3>Riconoscimenti:</h3>
