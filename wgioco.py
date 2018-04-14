@@ -140,9 +140,9 @@ CasellaCommerciante.vuoi_commerciare = vuoi_commerciare
 CasellaCommerciante.commercia = commercia
 
 lista_azioni = ['nord','sud','est','ovest','inventario','mangia','attacca','commercia','mappa','usa','ascolta','aiuto-crediti-esci']
-nomi_mappe = {'La città proibita di Pekino':'./mappe/alma-carlotta.csv',
-              'Wutay il monte abbandonato':'./mappe/anna.csv',
-              'La muraglia cinese':'./mappe/anna_alma_carlotta.csv'}
+nomi_mappe = {'La città proibita di Pekino':'./mappe/a-c.csv',
+              'Wutay il monte abbandonato':'./mappe/a.csv',
+              'La muraglia cinese':'./mappe/a-a-c.csv'}
 
 help = """
 Le possibili azioni sono:
