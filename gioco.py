@@ -18,17 +18,21 @@ u, U, usa: usa oggetto
 z, Z, ascolta: ascolta
 q, Q, uscire: termina l'avventura"""
 print("""
-Matteo è lieto di presentarvi questa avventura.
+Le GO.ZY sono liete di presentarvi questa fantastica avventura.
 """)
 print("""Che mappa vuoi affrontare:
-1) caccia al diamante
-2) fuga dalla caverna
+1) la mappa dello zig zag
+2) la mappa della mortalità
+3) il labirinto della fantasia
+
 """)
 risposta=int(input("Inserisci un numero:"))
 if risposta==1:
-    nome_mappa='./mappe/m.csv'
+    nome_mappa='./mappe/g.csv'
 elif risposta==2:
-    nome_mappa='./mappe/m-r.csv'
+    nome_mappa='./mappe/l.csv'
+else:
+    nome_mappa='./mappe/ap.csv'
 mappa = Mappa(nome_mappa)    
 risposta=input('\nDifficoltà ridotta (mappa visibile, nemici meno potenti, vita/oro aumentati) (s/n)?')
 if risposta=='s' or risposta=='S':
@@ -90,7 +94,7 @@ while True:                                    #“game loop”
     if not stanza.visitata:
         stanza.visitata = True
 print("""
-Matteo ti ringrazia per avere giocato a questa avventura.
+Le GO.ZY vi aspettano per la prossima avventura.
 """)        
 input('Premi un tasto per continuare.')
-print(open('./immagini_storie/crediti.txt').read(),veloce=True)
+print(open('./immagini_storie/crediti.txt').read(),veloce=True)                       

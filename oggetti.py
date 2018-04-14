@@ -39,8 +39,9 @@ class Pugnale(Arma):
 
 class Spada(Arma):
     def __init__(self):
-        super().__init__("Spada","Una spada ad una mano",20,50)
-                
+        super().__init__("Spada","Una spada pericolosa",20,50)
+                       
+                       
 class Pane(Mangiabile):
     def __init__(self):
         super().__init__("Pane","Una pagnotta di pane",10,5)
@@ -52,11 +53,34 @@ class Mela(Mangiabile):
 class PozioneCurativa(Mangiabile):
     def __init__(self):
         super().__init__("Pozione curativa","Una pozione guarente",50,20)
-
-class SpadaLaser(Arma):
+        
+class Polpo(Mangiabile):
     def __init__(self):
-        super().__init__("Spada Laser","Una spada laser da vero jedi",20,50)
+        super().__init__("Polpo","Una porzione di tentacoli",10,5)
 
+class Fiocina(Arma):
+    def __init__(self):
+        super().__init__("Fiocina","Arpione da pesca con dardi di ferro",10,25)
+
+class Powerhead(Arma):
+    def __init__(self):
+        super().__init__("Powerhead","Fucile subacqueo con proiettili potenti",50,75)
+
+class Calamaro(Mangiabile):
+    def __init__(self):
+        super().__init__("Calamaro","Un buonissimo calamaro",10,5)
+
+class Frustadialghe(Arma):
+    def __init__(self):
+        super().__init__("Frustadialghe","Ondeggiante frusta pericolosa",30,35)
+
+class Rana(Mangiabile):
+    def __init__(self):
+        super().__init__("Rana","Una piccola e buona rana",10,5)
+
+class Conchiglie(Arma):
+    def __init__(self):
+        super().__init__("Conchiglie","Tante conchiglie taglienti",25,35)
 # --------------------------
 # test
 # --------------------------
