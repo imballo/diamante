@@ -18,17 +18,17 @@ u, U, usa: usa oggetto
 z, Z, ascolta: ascolta
 q, Q, uscire: termina l'avventura"""
 print("""
-I Tre Fantasy sono lieti di presentarvi la caccia al diamante zeta.
+Benvenuto! Il gruppo dei Creatori presenta un gioco interessante.
 """)
 print("""Che mappa vuoi affrontare:
-1)la montagna zeta
-2)la montagna beta
+1) bloodbath
+2) la mappa bella
 """)
 risposta=int(input("Inserisci un numero:"))
 if risposta==1:
-    nome_mappa='./mappe/apu-d-t.csv'
-else:
-    nome_mappa='./mappe/apu.csv'
+    nome_mappa='./mappe/l-a-d.csv'
+elif risposta==2:
+    nome_mappa='./mappe/d.csv'
 mappa = Mappa(nome_mappa)    
 risposta=input('\nDifficoltà ridotta (mappa visibile, nemici meno potenti, vita/oro aumentati) (s/n)?')
 if risposta=='s' or risposta=='S':
@@ -90,7 +90,7 @@ while True:                                    #“game loop”
     if not stanza.visitata:
         stanza.visitata = True
 print("""
-I Tre Fantasy vi ringraziano per aver giocato.
-""")        
+Il gruppo dei Creatori ti ringrazia per avere giocato e ti da appuntamento alla prossima avventura.
+""")       
 input('Premi un tasto per continuare.')
 print(open('./immagini_storie/crediti.txt').read(),veloce=True)
