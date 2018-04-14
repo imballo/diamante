@@ -52,10 +52,40 @@ class Mela(Mangiabile):
 class PozioneCurativa(Mangiabile):
     def __init__(self):
         super().__init__("Pozione curativa","Una pozione guarente",50,20)
+        
+class Spadaunicorno(Arma):
+    def __init__(self):
+        super().__init__("Spada degli unicorni ","Una spada ad una mano forgiata da un unicorno",20,50)
+
+class SpadaArcobeleno(Arma):
+    def __init__(self):
+        super().__init__("Spada degli arcobeleni ","Una spada ad una mano a forma di arcobeleno",20,50)
 
 class SpadaLaser(Arma):
     def __init__(self):
-        super().__init__("Spada Laser","Una spada laser da vero jedi",20,50)
+        super().__init__("SpadaLaser","Una spada laser che stordisce con l'emissione di luce colorata",20,50)
+
+class Pozionefrullatodialghe(Mangiabile):
+    def __init__(self):
+        super().__init__("Pozione frullato di alghe","Una pozione guarente frullato di alghe",50,20)
+
+class Pozionepolveredimadreperla(Mangiabile):
+    def __init__(self):
+        super().__init__("Pozione polvere di madreperla","Una pozione cicatrizzante e rinvigorente",50,20)
+        
+class Fruttidimare(Mangiabile):
+    def __init__(self):
+        super().__init__("Frutti di mare","Una ciotola di frutti di mare",10,5)
+
+class Polpettemarinare(Mangiabile):
+    def __init__(self):
+        super().__init__("Polpettemarinare","Una porzione di polpettine",10,5)
+        
+class Cacciucco(Mangiabile):
+    def __init__(self):
+        super().__init__("Cacciucco","Una ciotola di pane arrostito e cacciucco",10,5)
+
+
 
 # --------------------------
 # test

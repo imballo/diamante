@@ -5,9 +5,14 @@ from random import random
 class Giocatore:
     def __init__(self, mappa):
         self.inventario = [Roccia(),
-            Spada(),
-            Pane(),
-            Mela()]
+                           Cacciucco(),
+                           Polpettemarinare(),
+                           Fruttidimare(),
+                           Pozionepolveredimadreperla(),
+                           Pozionefrullatodialghe(),
+                           SpadaLaser(),
+                           SpadaArcobeleno(),
+                           Spadaunicorno()]
         self.arma = self.arma_potente()
         self.vita = 100
         self.oro=50
