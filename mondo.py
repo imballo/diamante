@@ -14,7 +14,7 @@ class CasellaInizio(CasellaMappa):
         if self.visitata:
             return "\nRicordi quando sei atterrato per salvare Galassium.\n"
         else:
-            s=open('./immagini_storie/immagine_inizio.txt').read()
+            s=open('./immagini_storie/immagine_inizio.txt', encoding='utf8').read()
             s=s+"""
 Rispondi ad una richiesta di aiuto dal pianeta Galassium,
 dopo che un malvagio si è messo in testa di distruggerlo.
@@ -40,7 +40,7 @@ class CasellaFine(CasellaMappa):
         return 'FF'
     
     def descrizione(self):
-        d=open('./immagini_storie/immagine_fine.txt').read()        
+        d=open('./immagini_storie/immagine_fine.txt', encoding='utf8').read()        
         d1= \
 """
 Bravo, hai sconfitto il mostro finale.
@@ -197,7 +197,7 @@ class CasellaBoss(CasellaMostro):
     def descrizione(self, veloce=False):
         s=''
         if self.nemico.vivo() and not self.visitata:
-            s=open('./immagini_storie/immagine_boss.txt').read()
+            s=open('./immagini_storie/immagine_boss.txt', encoding='utf8').read()
         return s+super().descrizione()
             
 class CasellaCommerciante(CasellaMappa):
