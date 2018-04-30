@@ -140,9 +140,8 @@ CasellaCommerciante.vuoi_commerciare = vuoi_commerciare
 CasellaCommerciante.commercia = commercia
 
 lista_azioni = ['nord','sud','est','ovest','inventario','mangia','attacca','commercia','mappa','usa','ascolta','aiuto-crediti-esci']
-nomi_mappe = {'la montagna zeta':'./mappe/apu-d-t.csv',
-              'la montagna beta':'./mappe/apu.csv'}
-
+nomi_mappe = {'caccia al diamante':'./mappe/m.csv',
+              'fuga dalla caverna':'./mappe/m-r.csv'}
 
 help = """
 Le possibili azioni sono:
@@ -168,7 +167,7 @@ def carica_gioco(nome_mappa=''):
 
 class Schermo(BoxLayout):
     def chiudi(self,dt):
-        print("\nI tre fantasy vi ringraziano per aver giocato.")        
+        print("\nMatteo vi ringrazia per avere giocato alla sua avventura")        
         #App.get_running_app().on_pause()
         App.get_running_app().stop()
         Window.close()
@@ -190,7 +189,7 @@ class Schermo(BoxLayout):
             if azione in ['h','H','aiuto-crediti-esci','continua a giocare','esci','crediti','sono sicuro']:                
                 if azione=='continua a giocare' or azione=='crediti':
                     if azione =='crediti':
-                        print(open('./immagini_storie/crediti.txt').read(),veloce=True)
+                        print(open('./immagini_storie/crediti.txt', encoding='utf8').read(),veloce=True)
                     self.crea_bottoni(lista_azioni)                
                 elif azione=='esci':
                     print('\nSei sicuro di volere smettere. Tutti i dati verrano persi.')
@@ -233,7 +232,7 @@ class Schermo(BoxLayout):
                 if len(lista_scelte)>0:
                     self.crea_bottoni(lista_scelte)
             elif hasattr(stanza, 'cantastorie') and azione in ['z','Z','ascolta']:
-                stanza.cantastorie.racconta_storia(stanza.storia)                
+                stanza.cantastorie.racconta_storia(stanza.storia)
             else:
                 print('\nAzione non valida!')
         elif azione in [oggetto.nome for oggetto in giocatore.lista_mangiabili()]:
@@ -262,7 +261,7 @@ class Schermo(BoxLayout):
             if azione=='facile':                
                 mappa.gioco_facile()
                 giocatore.gioco_facile()
-            print("\nI tre fantasy sono lieti di presentarvi la caccia al diamante zeta.")
+            print("\nMatteo è lieto di presentarvi:")
             print("\nDigita h/H help per ricevere aiuto sui comandi!\n")
             print(stanza.descrizione(),end='')
             self.crea_bottoni(lista_azioni)
