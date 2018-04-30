@@ -17,11 +17,11 @@ class Cantastorie(Personaggio):
         if dado==0:
             dado=randint(1,3)
         if dado==1:
-            print(open('./immagini_storie/prima_storia.txt').read())
+            print(open('./immagini_storie/prima_storia.txt', encoding='utf8').read())
         elif dado==2:
-            print(open('./immagini_storie/seconda_storia.txt').read())
+            print(open('./immagini_storie/seconda_storia.txt', encoding='utf8').read())
         elif dado==3:
-            print(open('./immagini_storie/terza_storia.txt').read())
+            print(open('./immagini_storie/terza_storia.txt', encoding='utf8').read())
         
 
 class Commerciante(Personaggio):

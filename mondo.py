@@ -14,7 +14,7 @@ class CasellaInizio(CasellaMappa):
         if self.visitata:
             return "\nSei già passato da questa parte della Cina.\n"
         else:
-            s=open('./immagini_storie/immagine_inizio.txt').read()
+            s=open('./immagini_storie/immagine_inizio.txt', encoding='utf8').read()
             s=s+"""
 Ti sei avventurato nell'antica Cina per trovare la macchina del tempo.
 Se ci riuscirai potrai tornare alla tua epoca.
@@ -43,7 +43,7 @@ class CasellaFine(CasellaMappa):
         super().__init__()
         
     def descrizione(self):
-        d=open('./immagini_storie/immagine_fine.txt').read()        
+        d=open('./immagini_storie/immagine_fine.txt', encoding='utf8').read()        
         d1= \
 """
 Sei riuscito ad uscire dalla città proibita di Pekino, ti aspetta il secondo livello: Wutay, il monte abbandonato.
@@ -205,7 +205,7 @@ class CasellaBoss(CasellaMostro):
     def descrizione(self, veloce=False):
         s=''
         if self.nemico.vivo() and not self.visitata:
-            s=open('./immagini_storie/immagine_boss.txt').read()
+            s=open('./immagini_storie/immagine_boss.txt', encoding='utf8').read()
         return s+super().descrizione()
             
 class CasellaCommerciante(CasellaMappa):
