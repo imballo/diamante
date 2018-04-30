@@ -14,7 +14,7 @@ class CasellaInizio(CasellaMappa):
         if self.visitata:
             return "\nIn questo luogo non c'è più niente di utile.\n"
         else:
-            s=open('./immagini_storie/immagine_inizio.txt').read()
+            s=open('./immagini_storie/immagine_inizio.txt', encoding='utf8').read()
             s=s+"""
 Ti ritrovi nella grotta Zeta in cui dovrai trovare il diamante Zeta.
 Trovarlo potrebbe essere un'impresa mortale.
@@ -39,7 +39,7 @@ class CasellaFine(CasellaMappa):
         return 'FF'
     
     def descrizione(self):
-        d=open('./immagini_storie/immagine_fine.txt').read()        
+        d=open('./immagini_storie/immagine_fine.txt', encoding='utf8').read()        
         d1= \
 """
 Ti ritrovi davanti la grande porta Zeta.
@@ -195,7 +195,7 @@ class CasellaBoss(CasellaMostro):
     def descrizione(self, veloce=False):
         s=''
         if self.nemico.vivo() and not self.visitata:
-            s=open('./immagini_storie/immagine_boss.txt').read()
+            s=open('./immagini_storie/immagine_boss.txt', encoding='utf8').read()
         return s+super().descrizione()
             
 class CasellaCommerciante(CasellaMappa):
