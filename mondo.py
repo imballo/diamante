@@ -14,7 +14,7 @@ class CasellaInizio(CasellaMappa):
         if self.visitata:
             return "\nQuesta è una casella noiosa che hai già visitato.\n"
         else:
-            s=open('./immagini_storie/immagine_inizio.txt').read()
+            s=open('./immagini_storie/immagine_inizio.txt', encoding='utf8').read()
             s=s+"""
 Ti trovi in un mondo fantastico costruito sotto la sabbia, Undersand, alla ricerca del mostro Survive.
 Eliminare il mostro per salvare i cittadini sarà solo merito tuo.
@@ -39,7 +39,7 @@ class CasellaFine(CasellaMappa):
         return 'FF'
     
     def descrizione(self):
-        d=open('./immagini_storie/immagine_fine.txt').read()        
+        d=open('./immagini_storie/immagine_fine.txt', encoding='utf8').read()        
         d1= \
 """
 Sei riuscito a sconfiggere Survive, che da anni ci perseguitava.
@@ -195,7 +195,7 @@ class CasellaBoss(CasellaMostro):
     def descrizione(self, veloce=False):
         s=''
         if self.nemico.vivo() and not self.visitata:
-            s=open('./immagini_storie/immagine_boss.txt').read()
+            s=open('./immagini_storie/immagine_boss.txt', encoding='utf8').read()
         return s+super().descrizione()
             
 class CasellaCommerciante(CasellaMappa):
