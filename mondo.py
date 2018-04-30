@@ -15,7 +15,7 @@ class CasellaInizio(CasellaMappa):
         if self.visitata:
             return "\nQuesta è una zona noiosa della caverna.\n"
         else:
-            s=open('./immagini_storie/immagine_inizio.txt').read()
+            s=open('./immagini_storie/immagine_inizio.txt', encoding='utf8').read()
             s=s+"""
 Ti trovi in fondo al Mar Mediterraneo alla ricerca del delfino Remix, il principe dei delfini.
 Se riuscirai a trovarlo sarà solo merito tuo.
@@ -44,7 +44,7 @@ class CasellaFine(CasellaMappa):
         super().__init__()    
     
     def descrizione(self):
-        d=open('./immagini_storie/immagine_fine.txt').read()        
+        d=open('./immagini_storie/immagine_fine.txt', encoding='utf8').read()        
         d1= """
 Vedi una coda che si muove, qualcuno si agita disperatamente intrappolato.
 Hai appena salvato il piccolo delfino.
@@ -215,7 +215,7 @@ class CasellaBoss(CasellaMostro):
     def descrizione(self, veloce=False):
         s=''
         if self.nemico.vivo() and not self.visitata:
-            s=open('./immagini_storie/immagine_boss.txt').read()
+            s=open('./immagini_storie/immagine_boss.txt', encoding='utf8').read()
         return s+super().descrizione()
             
 class CasellaCommerciante(CasellaMappa):
