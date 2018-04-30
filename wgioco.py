@@ -190,7 +190,7 @@ class Schermo(BoxLayout):
             if azione in ['h','H','aiuto-crediti-esci','continua a giocare','esci','crediti','sono sicuro']:                
                 if azione=='continua a giocare' or azione=='crediti':
                     if azione =='crediti':
-                        print(open('./immagini_storie/crediti.txt').read(),veloce=True)
+                        print(open('./immagini_storie/crediti.txt', encoding='utf8').read(),veloce=True)
                     self.crea_bottoni(lista_azioni)                
                 elif azione=='esci':
                     print('\nSei sicuro di volere smettere. Tutti i dati verrano persi.')
