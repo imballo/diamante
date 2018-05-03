@@ -175,10 +175,11 @@ class Schermo(BoxLayout):
         #kivy.base.stopTouchApp()
     
     def scrivi(self,testo):
-        self.testo.text = self.testo.text + testo
-        max_length = 80*50
-        if len(self.testo.text)> max_length:
-            self.testo.text = self.testo.text[-max_length:]
+        testo_tmp = self.testo.text + testo
+        max_length = 80*40
+        if len(testo_tmp)> max_length:
+            testo_tmp = testo_tmp[-max_length:]        
+        self.testo.text = testo_tmp
         self.testo.texture_update()
     
     def azione(self,instance):
