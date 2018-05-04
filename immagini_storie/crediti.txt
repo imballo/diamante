@@ -1,5 +1,5 @@
 Licenza MIT/Expat
-Copyright (c) 2018 Matteo Nardi
+Copyright(c)2018 Matteo Nardi
 Si concede gratuitamente l'autorizzazione, a chiunque ottenga una copia di 
 questo software e dei file di documentazione associati (il "Software"),di dare
 opera al Software senza restrizioni, compresi senza limitazione i diritti di 
@@ -15,7 +15,6 @@ DEL SOFTWARE O I TITOLARI DEL COPYRIGHT POTRANNO ESSERE RITENUTI RESPONSABILI DI
 RECLAMI, DANNI O ALTRE RESPONSABILITÀ, DERIVANTI DA O COLLEGATI A CONTRATTO, 
 ILLECITO CIVILE O IN ALTRA RELAZIONE CON IL SOFTWARE O CON IL SUO UTILIZZO O CON
 ALTRE OPERAZIONI DEL SOFTWARE.
--
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
@@ -31,36 +30,27 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.    
-
----
-
+-
 Parte del codice è stato scritto avendo come riferimento l'ottimo progetto
 sviluppato da Phillip Johnson e reperibile al seguente indirizzo web:
 https://github.com/phillipjohnson/text-adventure-tut
-
 The MIT License (MIT)
-Copyright (c) 2014 Phillip Johnson
-
----
-
-Tutte le immagini ascii art sono di pubblico dominio e sono state ottenute 
+Copyright(c)2014 Phillip Johnson
+-
+Tutte le ascii art sono di pubblico dominio e sono state ottenute 
 scaricate dal sito www.chris.com/ascii/ "Christopher Johnson's ASCII Art 
 Collection"
-
----
-
+-
 Infine sotto sono riportati i termini di utilizzo delle icone che sono state
 utilizzate per la versione Android:
-
-Designer: Chanut is Industries (https://www.iconfinder.com/Chanut-is)
-	  Designer: Icograms (https://www.iconfinder.com/icograms)
-	  Designer: Daniele De Santis (https://www.iconfinder.com/danieledesantis)
-  	  Designer: BomSymbols . (https://www.iconfinder.com/korawan_m)
-License: Creative Commons (Attribution 3.0 Unported) 
-          (http://creativecommons.org/licenses/by/3.0/)
+Designer: 
+ Chanut is Industries (https://www.iconfinder.com/Chanut-is)
+ Icograms (https://www.iconfinder.com/icograms)
+ Daniele De Santis (https://www.iconfinder.com/danieledesantis)
+ BomSymbols . (https://www.iconfinder.com/korawan_m)
+License: Creative Commons (Attribution 3.0 Unported)
+(http://creativecommons.org/licenses/by/3.0/)
 -
 Designer: Carlo Eduardo Rodríguez Espino 
-          (https://www.iconfinder.com/CarloRodriguez)
+(https://www.iconfinder.com/CarloRodriguez)
 License: Free for commercial use
-
-
