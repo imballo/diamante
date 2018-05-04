@@ -19,7 +19,7 @@ python3 gioco.py<br>
 Per la versione a finestre/bottoni: <br>
 python3 wgioco.py<br>
 E' possibile scaricare una versione compilata per Android usando il framework Buildozer/Python-for-android al seguente link:<br>
-...<br>
+https://play.google.com/store/apps/developer?id=playimballo<br>
 <br>
 <h3>Riconoscimenti:</h3>
 Le avventure hanno costituito il punto di arrivo di un percorso durato tre anni durante i quali i bambini hanno partecipato ad un progetto sperimentale di robotica educativa che li ha portati ad imparare e a cooperare tra loro per raggiungere un obiettivo comune.
