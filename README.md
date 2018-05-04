@@ -19,7 +19,7 @@ python3 gioco.py<br>
 Per la versione a finestre/bottoni: <br>
 python3 wgioco.py<br>
 E' possibile scaricare una versione compilata per Android usando il framework Buildozer/Python-for-android al seguente link:<br>
-https://play.google.com/store/apps/details?id=it.matteonardi.avventuraoceano<br>
+https://play.google.com/store/apps/developer?id=playimballo<br>
 <br>
 <h3>Riconoscimenti:</h3>
 L'avventura ha costituito il punto di arrivo di un percorso durato tre anni durante i quali i bambini hanno avuto la possibilità di divertirsi, imparare e creare usando la scatola magica.<br>
