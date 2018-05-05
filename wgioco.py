@@ -311,7 +311,8 @@ class Schermo(BoxLayout):
         self.orientation='vertical'
         self.testo = Label(text='',font_name='RobotoMono-Regular', font_size='10sp', text_size=(self.width,None),valign='bottom', size_hint_y=None) # font per telefono 7sp
         self.testo.bind(size=lambda instance,size: self.imposta_pro('self.testo.text_size',(size[0],None)))                
-        self.testo.bind(texture_size=lambda instance,size: self.imposta_pro('self.testo.height',size[1]))        
+        self.testo.bind(texture_size=lambda instance,size: self.imposta_pro('self.testo.height',size[1]))
+        self.testo.max_lines=58;        
         self.sv = ScrollView()
         self.sv.scroll_y=0        
         self.sv.add_widget(self.testo)
