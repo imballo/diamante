@@ -22,5 +22,4 @@ E' possibile scaricare una versione compilata per Android usando il framework Bu
 https://play.google.com/store/apps/developer?id=playimballo<br>
 <br>
 <h3>Riconoscimenti:</h3>
-L'avventura ha costituito il punto di arrivo di un percorso durato tre anni durante i quali i bambini hanno avuto la possibilità di divertirsi, imparare e creare usando la scatola magica.<br>
-...<br>
+Le avventure hanno costituito il punto di arrivo di un percorso durato tre anni durante i quali i bambini hanno partecipato ad un progetto sperimentale di robotica educativa che li ha portati ad imparare e a cooperare tra loro per raggiungere un obiettivo comune.<br>
